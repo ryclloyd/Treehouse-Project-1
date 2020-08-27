@@ -1,0 +1,324 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    background: #34495E;
+}
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.shadow {
+    color: #000;
+    text-shadow: 0px 2px 3px rgba(103, 122, 141, 0.85);
+}
+
+h3 {
+    text-align: left;
+}
+
+
+/* --------------------- */
+/*  HEADER
+/* --------------------- */
+
+.main-nav {
+    width: 100%;
+    min-height: 60px;
+    padding: 10px;
+    position: absolute
+}
+
+.nav {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    list-style-type: none;
+    margin-right: 10%;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+}
+
+.nav li {
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+}
+
+.nav a {
+  transition: all .2s;
+}
+
+.nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7)), url(img/header-bkgrd.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+.profile-image {
+    float: left;
+    position: inherit;
+    margin-left: 220px;
+    margin-top: -40px;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    border: 6px solid #dcdde1;
+    transition: all .2s;
+}
+
+header .profile-image:hover {
+    transform: scale(1.2) rotate(25deg);
+}
+
+.tag-box {
+    margin-top: 280px;
+}
+
+.tag {
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+} 
+
+.tag-name {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 430px;
+    margin-bottom: -30px;
+}
+
+/* --------------------- */
+/*  BKGROUND - GOALS
+/* --------------------- */
+
+
+  .flex {
+    display: flex; 
+    flex-wrap:wrap;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 30px auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+.card {
+    margin: 60px;
+    margin-top: 20px;
+    padding: 20px 40px 40px;
+    width: 1140px;
+    height: 500px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    background-image: url(img/seigaiha.png);
+    border-radius: 6px;
+    border-color: #000;
+    border-width: 10px;
+    transition: all .5s;
+}
+
+/* Code Icons */
+
+.code-icons {
+    width: 100%;
+    list-style: none;
+    float: left;
+}
+
+.code-icons li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: -30px;
+}
+
+.uiux-icons {
+    width: 100%;
+    list-style: none;
+}
+
+.html {
+    height: 60px;
+    width: auto;
+    padding-right: 15px;
+}
+
+.css {
+    height: 60px;
+    width: auto;
+    padding-right: 5px;
+}
+
+.js {
+    height: 76px;
+    width: auto;
+    margin-right: -3px;
+}
+
+.react {
+    height: 76px;
+    width: auto;
+    padding-right: 25px;
+}
+
+.uiux {
+    height: 105px;
+    width: auto;
+    padding-right: 25px
+}
+
+.cartoon {
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.quote {
+    width: 1000px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+
+/* --------------------- */
+/*  EXPERIENCE
+/* --------------------- */
+
+.experience {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(img/seigaiha.png);
+    background-size: cover;
+    padding-top: 40px;
+}
+
+.lists-box {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.education {
+    padding: 10px 10px;
+    margin-right: 150px;
+    margin-left: 90px;
+}
+
+.professional {
+    padding: 10px 10px;
+    margin-right: 195px;
+
+}
+
+.technical {
+    padding: 10px 10px;
+    margin-right: 40px;
+}
+
+.education-ul li,
+.prof-ul li,
+.tech-ul li {
+    list-style: none;
+    text-align: left;
+    margin-left: -40px;
+}
+
+
+
+
+/* --------------------- */
+/*  FOOTER
+/* --------------------- */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(img/twitter.svg);
+}
+a.linkedin {
+  background-image: url(img/linkedin.svg);
+}
+a.github {
+  background-image: url(img/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+
+  footer {
+    color: #efefef;
+    font-size: 1em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
