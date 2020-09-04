@@ -25,6 +25,7 @@ a:hover {
 .shadow {
     color: #000;
     text-shadow: 0px 2px 3px rgba(103, 122, 141, 0.85);
+    display: inline-flex;
 }
 
 h3 {
@@ -52,10 +53,6 @@ h3 {
     margin-right: 10%;
 }
 
-.nav .name {
-    display: block;
-    margin-right: auto;
-}
 
 .nav li {
     padding: 10px 10px 10px 10px;
@@ -73,58 +70,34 @@ h3 {
 
 header {
     text-align: center;
+    height: 200px;
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7)), url(img/header-bkgrd.jpg);
     background-size: cover;
     overflow: hidden;
     padding-top: 10px;
-    height: 100vh;
 }
 
 .profile-image {
     float: left;
     position: inherit;
     margin-left: 220px;
-    margin-top: -40px;
-    height: 200px;
+    margin-top: 10px;
+    height: 150px;
     width: auto;
     border-radius: 50%;
-    border: 6px solid #dcdde1;
+    border: 5px solid #dcdde1;
     transition: all .2s;
 }
 
-header .profile-image:hover {
-    transform: scale(1.2) rotate(25deg);
-}
 
-.tag-box {
-    margin-top: 280px;
-}
-
-.tag {
-    color: #fff;
-    font-size: 30px;
-    border-radius: 5px;
-    margin-right: 5px;
-} 
-
-.tag-name {
-    color: #fff;
-    font-size: 60px;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 430px;
-    margin-bottom: -30px;
-}
 
 /* --------------------- */
-/*  BKGROUND - GOALS
+/*  EXPERIENCE
 /* --------------------- */
 
-
-.flex {
+  .flex {
     display: flex; 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     max-width: 1200px;
     justify-content: space-around;
     margin: 30px auto;
@@ -135,86 +108,39 @@ header .profile-image:hover {
 .box {
     margin: 60px;
     margin-top: 20px;
-    padding: 20px 40px 40px;
+    padding: 20px 40px 40px 30px;
     width: 1140px;
-    height: 500px;
-    text-align: center;
-    vertical-align: middle;
     background-image: url(img/seigaiha.png);
     background-size: cover;
     border-radius: 6px;
-    border-color: #000;
     border-width: 10px;
-    transition: all .5s;
-}
-
-/* Code Icons */
-
-.code-icons {
-    width: 100%;
-    list-style: none;
-    float: left;
-}
-
-.code-icons li {
     display: inline-block;
-    vertical-align: middle;
-    margin-bottom: -30px;
 }
 
-.uiux-icons {
-    width: 100%;
+.education,
+.professional,
+.technical {
+    width: 380px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.education-ul li,
+.prof-ul li,
+.tech-ul li {
     list-style: none;
+    text-align: left;
 }
 
-.html {
-    height: 60px;
+.portfolio {
+    height: 250px;
     width: auto;
-    padding-right: 15px;
+    float: right;
+    margin-right: 220px;
+    margin-top: -550px;
+    vertical-align: middle;
 }
-
-.css {
-    height: 60px;
-    width: auto;
-    padding-right: 5px;
-}
-
-.js {
-    height: 76px;
-    width: auto;
-    margin-right: -3px;
-}
-
-.react {
-    height: 76px;
-    width: auto;
-    padding-right: 25px;
-}
-
-.uiux {
-    height: 105px;
-    width: auto;
-    padding-right: 25px
-}
-
-.cartoon {
-    height: 100px;
-    width: auto;
-    margin-top: 20px;
-}
-
-.quote {
-    width: 1000px;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 80px;
-}
-
-.back-to-top {
-    text-transform: uppercase;
-    padding-bottom: 30px;
-}
-
 
 /* --------------------- */
 /*  FOOTER
