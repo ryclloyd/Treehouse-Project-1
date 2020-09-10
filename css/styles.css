@@ -1,4 +1,9 @@
 /* Global Layout Set-up */
+
+/* --------------------- */
+/*  HEADER
+/* --------------------- */
+
 * { 
   box-sizing: border-box;
 }
@@ -7,28 +12,35 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     color: #222;
     background: #34495E;
 }
 /* Link Styles */
 
-a {
-    text-decoration: none;
-    color: #999;
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
 }
 
-a:hover {
+.h2-home {
     color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .shadow {
     color: #000;
     text-shadow: 0px 2px 3px rgba(103, 122, 141, 0.85);
-}
-
-h3 {
-    text-align: left;
 }
 
 
@@ -60,6 +72,15 @@ h3 {
 .nav li {
     padding: 10px 10px 10px 10px;
     margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #fff;
 }
 
 .nav a {
@@ -121,6 +142,14 @@ header .profile-image:hover {
 /*  BKGROUND - GOALS
 /* --------------------- */
 
+.header-bkgrd {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7)), url(img/header-bkgrd.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 10px;
+    height: 200px;
+}
 
 .flex {
     display: flex; 
@@ -133,6 +162,7 @@ header .profile-image:hover {
   }
 
 .box {
+    color: #000;
     margin: 60px;
     margin-top: 20px;
     padding: 20px 40px 40px;
@@ -160,6 +190,7 @@ header .profile-image:hover {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: -30px;
+    margin-top: 10px
 }
 
 .uiux-icons {
@@ -198,9 +229,9 @@ header .profile-image:hover {
 }
 
 .cartoon {
-    height: 100px;
+    height: 150px;
     width: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .quote {
@@ -215,6 +246,104 @@ header .profile-image:hover {
     padding-bottom: 30px;
 }
 
+
+/* --------------------- */
+/*  EXPERIENCE
+/* --------------------- */
+
+.header-exp {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7)), url(img/header-bkgrd.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 10px;
+    height: 200px;
+}
+
+.box-exp {
+    margin: 60px;
+    margin-top: 20px;
+    padding: 20px 40px 40px;
+    width: 1140px;
+    height: 950px;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(img/seigaiha.png);
+    background-size: cover;
+    border-radius: 6px;
+    border-color: #000;
+    border-width: 10px;
+    transition: all .5s;
+}
+
+.flex-exp {
+    display: flex; 
+    flex-wrap:wrap;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 30px auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+.profile-image-exp {
+    float: left;
+    position: inherit;
+    margin-left: 220px;
+    margin-top: 10px;
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    border: 5px solid #dcdde1;
+    transition: all .2s;
+}
+
+.flex {
+    display: flex; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 30px auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+.box {
+    margin: 60px;
+    margin-top: 20px;
+    padding: 20px 40px 40px 30px;
+    width: 1140px;
+    background-image: url(img/seigaiha.png);
+    background-size: cover;
+    border-radius: 6px;
+    border-width: 10px;
+    display: inline-block;
+}
+
+.education,
+.professional,
+.technical {
+    width: 380px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.education-ul li,
+.prof-ul li,
+.tech-ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.portfolio {
+    height: 250px;
+    width: auto;
+    float: right;
+    margin-right: 220px;
+    margin-top: -550px;
+    vertical-align: middle;
+}
 
 /* --------------------- */
 /*  FOOTER
